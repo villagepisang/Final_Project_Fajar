@@ -1,4 +1,4 @@
-package stepdefs;
+package stepDef;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import stepDef.Hooks;
 
 import static org.junit.Assert.*;
 
@@ -14,11 +15,8 @@ public class LoginSteps {
     WebDriver driver;
     LoginPage loginPage;
 
-    @Before
-    public void setup() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+    public LoginSteps() {
+        driver = Hooks.driver;
     }
 
     @Given("User is on Demoblaze homepage")
