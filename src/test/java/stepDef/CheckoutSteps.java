@@ -1,13 +1,9 @@
-package stepdefs;
+package stepDef;
 
 import io.cucumber.java.en.*;
 import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import pages.*;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 import static org.junit.Assert.*;
 
@@ -19,20 +15,12 @@ public class CheckoutSteps {
     ProductPage productPage;
     CartPage cartPage;
 
-    @Before
-    public void setup() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+    public CheckoutSteps() {
+        driver = Hooks.driver;
         loginPage = new LoginPage(driver);
         homePage = new HomePage(driver);
         productPage = new ProductPage(driver);
         cartPage = new CartPage(driver);
-    }
-
-    @Given("User is on Demoblaze homepage")
-    public void user_on_homepage() {
-        driver.get("https://www.demoblaze.com");
     }
 
     @When("User logs in with username {string} and password {string}")
