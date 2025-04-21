@@ -14,11 +14,10 @@ Pada Project ini kita mempunyai cucumber api.feature dengan style Page Object Mo
 
 Berikut Evidance Sukses Run :
 
-![alt text](http://github.com/villagepisang/Final_Project_Fajar/blob/master/picture/pic1.jpg)
+![alt text](https://github.com/villagepisang/Final_Project_Fajar/blob/master/picture/pic1.jpg)
 
 Berikut contoh hasil Api Testing dan Web Testing :
 
-![alt text](http://github.com/villagepisang/Final_Project_Fajar/blob/master/picture/pic1.jpg)
 ![alt text](https://github.com/villagepisang/Final_Project_Fajar/blob/master/picture/pic2productpage.jpg)
 ![alt text](https://github.com/villagepisang/Final_Project_Fajar/blob/master/picture/pic3chartpage.jpg)
 ![alt text](https://github.com/villagepisang/Final_Project_Fajar/blob/master/picture/pic4costep.jpg)
